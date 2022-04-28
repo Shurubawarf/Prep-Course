@@ -1,7 +1,7 @@
 // En estas primeras 6 preguntas, reemplaza `null` por la respuesta
 
 // Crea una variable "string", puede contener lo que quieras:
-const nuevaString = null;
+const nuevaString = 'hola';
 
 // Crea una variable numérica, puede ser cualquier número:
 const nuevoNum = 2;
@@ -27,46 +27,49 @@ const nuevoModulo = 21 % 5 === 1;
 
 function devolverString(str) {
   // "Return" la string provista: str
-  // Tu código:
-  
-}
+  // Tu código: 
+  return ( 'str' )
+  }
 
 function suma(x, y) {
   // "x" e "y" son números
   // Suma "x" e "y" juntos y devuelve el valor
-  // Tu código:
-  
-}
+  // Tu código: 
+  suma ( 1 + 2 )
+  }
 
 function resta(x, y) {
   // Resta "y" de "x" y devuelve el valor
-  // Tu código:
-  
+  // Tu código: 
+  resta (5 - 7)
 }
 
 function multiplica(x, y) {
   // Multiplica "x" por "y" y devuelve el valor
-  // Tu código:
+  // Tu código: 
+  multiplica ( 4 * 10 )
   
 }
 
 function divide(x, y) {
   // Divide "x" entre "y" y devuelve el valor
-  // Tu código:
+  // Tu código: 
+  divide (8 / 2 )
   
 }
 
 function sonIguales(x, y) {
   // Devuelve "true" si "x" e "y" son iguales
   // De lo contrario, devuelve "false"
-  // Tu código:
-  
+  // Tu código: 
+  sonIguales ( 6 = 6)
 }
 
 function tienenMismaLongitud(str1, str2) {
   // Devuelve "true" si las dos strings tienen la misma longitud
   // De lo contrario, devuelve "false"
-  // Tu código:
+  // Tu código: 
+  tienenMismaLongitud ( 'hola', 'hola')
   
 }
 
