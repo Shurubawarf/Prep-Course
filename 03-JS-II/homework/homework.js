@@ -76,6 +76,18 @@ function operadoresLogicos(num1, num2, num3) {
   //Si num3 es más grande que num1 y num2, aumentar su valor en 1 y retornar el nuevo valor.
   //0 no es ni positivo ni negativo. Si alguno de los argumentos es 0, retornar "Error".
   //Si no se cumplen ninguna de las condiciones anteriores, retornar false. 
+if (num1 > num2 && num1 > num3 && num1 > 0){
+  return "Numero 1 es mayor y positivo";
+} else if (0 > num1 || 0 > num2 || 0 > num3) {
+  return "hay negativos";
+} else if (num1 < num3 && num3 > num2) {
+  return 1 + num3;
+} else if (num3 === 0 || num2 === 0 || num1 === 0) {
+  return "Error";
+} else {
+  return false;
+}
+
 }
 
 function esPrimo(numero) {
@@ -84,32 +96,64 @@ function esPrimo(numero) {
   // Pista: un número primo solo es divisible por sí mismo y por 1
   // Pista 2: Puedes resolverlo usando un bucle `for`
   // Nota: Los números 0 y 1 NO son considerados números primos
+if ( numero < 2) false;
+if (numero === 2) true;
+for (var i = 2; i<= numero; i++){
+  if (numero % 2 === 1){
+    return true;
+  }
+  if (numero % 2 === o){
+    return false;
+  }
+}
 }
 
 function esVerdadero(valor){
   //Escribe una función que reciba un valor booleano y retorne “Soy verdadero” 
   //si su valor es true y “Soy falso” si su valor es false.
   //Escribe tu código aquí
-
+if (valor) {
+  return "Soy verdadero";
+} else {
+  return "Soy falso";
+} 
 }
 
 function tablaDelSeis(){
   //Escribe una función que muestre la tabla de multiplicar del 6 (del 0 al 60).
   //La función devuelve un array con los resultados de la tabla de multiplicar del 6 en orden creciente.
   //Escribe tu código aquí   
-  
+  let arraytablaDel6 = []
+  for (let i = 0; i < 11; i++) {
+    arraytablaDel6.push (6 * i)
+  }
+return arraytablaDel6
 }
+
 
 function tieneTresDigitos(numero){
   //Leer un número entero y retornar true si tiene 3 dígitos. Caso contrario, retorna false.
   //Escribe tu código aquí
-  
+  if (numero > 99 && numero < 1000) {
+    return true;
+  } else {
+    return false;
+  }
 }
 
 function doWhile(numero) {
   //Implementar una función tal que vaya aumentando el valor recibido en 5 hasta un límite de 8 veces
   //Retornar el valor final.
   //Usar el bucle do ... while.
+  var a = numero;
+  var i = 0;
+  do {
+    i++;
+    a = a + 5;
+  }
+  while(i < 8);
+  return a;
+
 }
 
 
